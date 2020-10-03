@@ -1,0 +1,100 @@
+/*General*/
+:root {
+    --colour-1: #174e65;
+    --colour-2: #B2C0C9;
+    /*--colour-2: #8DA2AF;*/
+    --colour-3: #000000; /*hover*/
+    --colour-contrast-1: #F08080; /*Blog*/
+    --colour-contrast-2: #D4AF37; /*Stars*/
+    --colour-dark: #000000;
+    --colour-light: #FFFFFF;
+}
+
+@font-face {
+    font-family: 'Exo 2', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body, html {
+    font-family: 'Open Sans', sans-serif;
+    text-align: justify;
+    height: 100%;
+}
+
+h1 {
+    color: var(--colour-1);
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+h2 {
+    background-color: var(--colour-2);
+    text-align: center;
+    font-family: 'Exo 2', sans-serif;
+    padding: 1vh 0;
+    margin: 1vh 1vw;
+    border-radius: 100vw;
+}
+h3 {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    margin: 0;
+}
+
+/*Title Section*/
+.Title_Image {
+    background-image: linear-gradient(var(--colour-1),rgba(0, 0, 0, 0),rgba(0, 0, 0, 0)),url("../../HTML/Images/title_image.jpg");
+    height: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.Title_Text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.Title_Text h1 {
+    background-color: var(--colour-light);
+    padding: 0 5vw;
+    margin: 0;
+}
+.Title_Text h2 {
+    background-color: var(--colour-light);
+    margin: 0;
+    border-radius: 0;
+}
+
+/*Navigation Bar*/
+nav {
+    display: flex;
+    padding: 0;
+    width: 100%;
+    background-color: var(--colour-2);
+    /*position: -webkit-sticky; !* Safari *!*/
+    /*position: sticky;*/
+    top: 0;
+}
+nav a, nav img {
+    flex: calc(100%/8);
+    display: inline-block;
+    padding: 2vh 2vw;
+    text-decoration: none;
+    color: var(--colour-dark);
+    text-align: center;
+}
+nav a:hover {
+    background-color: var(--colour-3);
+    color: var(--colour-light);
+}
+nav a:active {
+    background-color: var(--colour-3);
+    color: var(--colour-light);
+}
+.blog {
+    float:right;
+    background-color:var(--colour-contrast-1)
+}
+
