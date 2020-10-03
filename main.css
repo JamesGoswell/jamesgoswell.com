@@ -9,6 +9,14 @@
     --colour-dark: #000000;
     --colour-light: #FFFFFF;
 }
+#Experience img, #Contact, .WiP {
+    display: none;
+}
+
+.WiP {
+    color: red;
+}
+
 
 @font-face {
     font-family: 'Exo 2', sans-serif;
@@ -51,12 +59,6 @@ section {
     margin: 0 3vw;
     padding: 2vh 2vw;
     background-color: var(--colour-light);
-}
-
-/*Logos*/
-img {
-    max-height: 85px;
-
 }
 
 /*Title Section*/
@@ -111,9 +113,51 @@ nav a:active {
     background-color: var(--colour-3);
     color: var(--colour-light);
 }
+
 .blog {
-    float:right;
     background-color:var(--colour-contrast-1)
+}
+
+/*Nav Toggle*/
+.navToggle{
+    cursor: pointer;
+    display: none;
+}
+.topbar, .midbar, .botbar {
+    width: 35px;
+    height: 5px;
+    background-color: var(--colour-1);
+    margin: 6px 0;
+    transition: 0.3s;
+}
+
+.change .topbar {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+}
+.change .midbar {
+    opacity: 0;
+}
+.change .botbar {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+}
+
+
+/*Logos*/
+.Logos {
+    text-align: center;
+}
+
+#Experience img {
+    border: 5px outset var(--colour-2);
+    border-radius: 2vh;
+    padding: 1vh 1vw;
+    object-fit: contain;
+    max-height: 100px;
+}
+.stars {
+    color: var(--colour-contrast-2);
 }
 
 /*Contact Section*/
@@ -134,4 +178,25 @@ nav a:active {
 /*Address Section*/
 address {
     text-align: center;
+}
+
+@media screen and (max-width: 800px) {
+    nav {
+        display: block;
+    }
+    nav a {
+        display: block;
+    }
+
+    nav br {
+        display: none;
+    }
+
+    nav img {
+        display: none;
+    }
+    .navToggle{
+        display: block;
+    }
+
 }

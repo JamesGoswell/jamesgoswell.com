@@ -15,24 +15,27 @@
             let c = 0;
 
             while (n > 0.5) {
-                star_text += '<i class="fas fa-star"></i>';
+                star_text += '<i class="fas fa-star stars"></i>';
                 n--;
                 c++;
             }
             if (n == 0.5) {
-                star_text += '<i class="fas fa-star-half-alt"></i>';
+                star_text += '<i class="fas fa-star-half-alt stars"></i>';
                 c++;
             }
             while (c<5) {
-                star_text += '<i class="far fa-star"></i>';
+                star_text += '<i class="far fa-star stars"></i>';
                 c++;
             }
             return document.write(star_text);
         }
+        function navtoggle(x) {
+            x.classList.toggle("change")
+        }
     </script>
 </head>
 <body>
-    <h1 style="color: red">THIS WEBSITE IS A WORKING PROGRESS</h1>
+    <h1 class="WiP">THIS WEBSITE IS A WORK IN PROGRESS</h1>
     <header class="Title_Image">
         <div class="Title_Text">
             <h2>Hey, I'm</h2>
@@ -42,6 +45,11 @@
 
 
     <nav>
+        <div class="navToggle" onclick="navtoggle(this)">
+            <div class="topbar"></div>
+            <div class="midbar"></div>
+            <div class="botbar"></div>
+        </div>
         <img src="Images/mono.svg" alt="JG Monogram">
         <a href="#">
             <i class="fas fa-home"></i><br>
@@ -68,7 +76,7 @@
             Contact
         </a>
         <a href="blog.html" class="blog">
-            <em class="fas fa-pencil-alt"></em><br>
+            <i class="fas fa-pencil-alt"></i><br>
             Blog (TBC!)
         </a>
     </nav>
@@ -87,53 +95,35 @@
 
     <section id="Experience">
         <h2>What Have I Done?</h2>
-<!--        <div class="surround">-->
-<!--            <article>-->
-<!--                    <h3>Example Place</h3>-->
-<!--                    <img alt="example pic">-->
-<!--                    <h3>Example Job Title</h3>-->
-<!--                    <h3>20##-##</h3>-->
-<!--                    <p>Nulla tincidunt orci sed suscipit mattis. Nunc purus orci, tempus nec ligula eget, scelerisque iaculis erat. Sed lorem enim, commodo eget nibh in, mattis pharetra mi. Nulla sit amet malesuada nisi, dignissim pharetra elit. Etiam tristique non lorem eleifend dignissim. Mauris purus est, posuere in quam ac, laoreet tristique dui. Curabitur auctor lorem in nunc fermentum convallis. Nullam mollis libero et sodales congue. Donec eleifend tellus ut ipsum volutpat facilisis. Morbi vel egestas magna, auctor luctus nulla. Pellentesque non sodales diam. Mauris elit nulla, tempor a venenatis euismod, fringilla nec nibh. Ut interdum tellus non dolor mattis, nec luctus quam eleifend. Donec feugiat, nulla auctor feugiat commodo, felis erat rhoncus ex, ac suscipit odio odio sit amet nisi. Suspendisse blandit, ipsum quis scelerisque suscipit, est nulla ornare quam, eget rutrum mi massa ut dolor. Cras aliquet neque sed lorem porttitor sagittis quis id lacus.-->
-<!--                        <br>-->
-<!--                        Curabitur a augue quis elit rhoncus interdum. Proin laoreet consectetur risus sit amet pellentesque. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nam auctor augue nibh, quis gravida mi facilisis non. Proin ac aliquet neque. Quisque a ipsum non ex finibus rhoncus nec ut leo. Sed in purus malesuada felis congue sodales id condimentum dui. Phasellus in neque nec orci finibus lobortis. Sed sit amet nibh nec mi blandit tristique. Ut a pulvinar dolor, ac viverra sapien.-->
-<!--                    </p>-->
-<!--            </article>-->
-<!--            <article>-->
-<!--                    <h3>Example Place</h3>-->
-<!--                    <img alt="example pic">-->
-<!--                    <h3>Example Job Title</h3>-->
-<!--                    <h3>20##-##</h3>-->
-<!--                        Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Curabitur varius ante at ante placerat aliquet. Phasellus rhoncus nisi non metus finibus porta. Aliquam erat volutpat. Donec tellus diam, aliquam sit amet consequat id, tincidunt in nulla. Vivamus ut tellus interdum, dignissim purus malesuada, sodales est. Sed eu vulputate eros.-->
-<!--                    </p>-->
-<!--            </article>-->
-<!--        </div>-->
         <div class="surround">
             <article>
+                <div class="Logos"><img src="https://www.quorn.co.uk/img/g/quorn_logo.png"></div>
                 <h3>Quorn</h3>
-                <img src="https://www.quorn.co.uk/img/g/quorn_logo.png">
                 <h3>Purchase Ledger Admin Assistant</h3>
                 <h3>2019</h3>
                 <p>Aliquam erat volutpat. Nulla rutrum cursus neque, vitae fringilla lorem pellentesque ut. Morbi sed tristique erat. Nunc ac nunc vel ligula scelerisque aliquam sed at quam. Praesent nec posuere ante. Nunc non euismod massa. Sed mollis mollis commodo.</p>
             </article>
             <article>
+                <div class="Logos">
+                    <img src="https://www.bmwgroup.com/etc.clientlibs/bmwgroup/clientlibs/clientlib-site/resources/img/brands/group.png">
+                    <img src="https://www.bmwgroup.com/etc.clientlibs/bmwgroup/clientlibs/clientlib-site/resources/img/brands/mini_logo.png">
+                </div>
                 <h3>BMW Group</h3>
-                <img src="https://www.bmwgroup.com/etc.clientlibs/bmwgroup/clientlibs/clientlib-site/resources/img/brands/group.png">
-                <img src="https://www.bmwgroup.com/etc.clientlibs/bmwgroup/clientlibs/clientlib-site/resources/img/brands/mini_logo.png">
                 <h3>Programme Planning and Production Control Intern</h3>
                 <h3>2018-19</h3>
                 <p>Integer convallis eu ipsum sit amet accumsan. In et augue eget mauris blandit posuere eu at ex. Quisque euismod mattis justo, vel fermentum nisl. Mauris eleifend odio a tincidunt efficitur. Nulla suscipit massa sit amet pretium scelerisque. Sed porttitor, sem ut porttitor rutrum, dui tellus volutpat est, eget auctor orci ligula sed elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vestibulum viverra mauris eu gravida tincidunt. Pellentesque in arcu et lorem faucibus fringilla. Curabitur suscipit nisl nec cursus vehicula. Duis dictum dolor nec volutpat tristique. Donec non hendrerit lorem. Praesent in nibh in sapien rhoncus sollicitudin.</p>
             </article>
             <article>
+                <div class="Logos"><img src="https://www.sheffield.ac.uk/themes/custom/uos/images/uos-crest.svg"></div>
                 <h3>University of Sheffield</h3>
-                <img src="https://www.sheffield.ac.uk/themes/custom/uos/images/uos-crest.svg">
                 <h3>Computer Science and Mathematics BSc</h3>
                 <h3>2016-20</h3>
                 <p>I completed my degree with a first class honours.<br>
                     Nulla facilisi. Donec vel porttitor felis. Sed eget sem semper, tempus lacus at, consequat erat. Curabitur a velit sed sapien tincidunt condimentum. Nullam pharetra cursus tellus, sed semper leo laoreet vitae. Vivamus a vehicula mi. Praesent egestas diam sit amet aliquet tempor.</p>
             </article>
             <article>
+                <div class="Logos"><img src="https://www.stokesleyschool.org/wp-content/uploads/2020/01/StokesleySchool-logo.png"></div>
                 <h3>Stokesley School & 6<sup>th</sup> Form College</h3>
-                <img src="https://www.stokesleyschool.org/wp-content/uploads/2020/01/StokesleySchool-logo.png">
                 <h3>A-Levels & GCSE</h3>
                 <h3>2009-16</h3>
                 <p>Vestibulum sollicitudin nunc vel dui ullamcorper tincidunt ac et risus. Sed velit ex, rhoncus quis nunc ut, auctor aliquam turpis. Pellentesque congue augue sit amet odio lobortis, eu volutpat augue dignissim. Fusce ut est lacus. Phasellus eget pulvinar turpis. Sed vehicula sem ac justo gravida, non dictum felis interdum. Nulla in ante consectetur tortor sodales ultricies.</p>
@@ -149,27 +139,27 @@
                 <h3>Programming</h3>
                 <div class="row">
                     <div class="col2">Python</div>
-                    <div class="col2 stars"><script>stars(4)</script></div>
+                    <div class="col2"><script>stars(4)</script></div>
                 </div>
                 <div class="row">
                     <div class="col2">SQL</div>
-                    <div class="col2 stars"><script>stars(3.5)</script></div>
+                    <div class="col2"><script>stars(3.5)</script></div>
                 </div>
                 <div class="row">
                     <div class="col2">Java</div>
-                    <div class="col2 stars"><script>stars(3)</script></div>
+                    <div class="col2"><script>stars(3)</script></div>
                 </div>
                 <div class="row">
                     <div class="col2">HTML, CSS and Javascript</div>
-                    <div class="col2 stars"><script>stars(2)</script></div>
+                    <div class="col2"><script>stars(2)</script></div>
                 </div>
                 <div class="row">
                     <div class="col2">Haskell</div>
-                    <div class="col2 stars"><script>stars(2)</script></div>
+                    <div class="col2"><script>stars(2)</script></div>
                 </div>
                 <div class="row">
                     <div class="col2">VBA (MS Office PL)</div>
-                    <div class="col2 stars"><script>stars(4)</script></div>
+                    <div class="col2"><script>stars(4)</script></div>
                 </div>
             </article>
 
@@ -177,15 +167,15 @@
                 <h3>Tools</h3>
                 <div class="row">
                     <div class="col2">MS Excel</div>
-                    <div class="col2 stars"><script>stars(5)</script></div>
+                    <div class="col2"><script>stars(5)</script></div>
                 </div>
                 <div class="row">
                     <div class="col2">MS Access</div>
-                    <div class="col2 stars"><script>stars(4.5)</script></div>
+                    <div class="col2"><script>stars(4.5)</script></div>
                 </div>
                 <div class="row">
                     <div class="col2">MS Office</div>
-                    <div class="col2 stars"><script>stars(4)</script></div>
+                    <div class="col2"><script>stars(4)</script></div>
                 </div>
             </article>
 
@@ -193,19 +183,18 @@
                 <h3>Languages</h3>
                 <div class="row">
                     <div class="col2">English</div>
-                    <div class="col2 stars"><script>stars(4)</script> (Mother Tongue)</div>
+                    <div class="col2"><script>stars(4)</script> (Mother Tongue)</div>
                 </div>
                 <div class="row">
                     <div class="col2">German</div>
-                    <div class="col2 stars"><script>stars(1)</script></div>
+                    <div class="col2"><script>stars(1)</script></div>
                 </div>
                 <div class="row">
                     <div class="col2">French</div>
-                    <div class="col2 stars"><script>stars(0.5)</script></div>
+                    <div class="col2"><script>stars(0.5)</script></div>
                 </div>
                 <p>Im more than willing to learn more languages, and hope to improve my french this year.</p>
             </article>
-
         </div>
     </section>
 
