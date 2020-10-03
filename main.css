@@ -41,6 +41,24 @@ h3 {
     margin: 0;
 }
 
+/*Sections*/
+section {
+    background-color: var(--colour-1);
+    padding: 0.25vh 0 1vh 0;
+    margin-top: 1vh;
+}
+.surround {
+    margin: 0 3vw;
+    padding: 2vh 2vw;
+    background-color: var(--colour-light);
+}
+
+/*Logos*/
+img {
+    max-height: 85px;
+
+}
+
 /*Title Section*/
 .Title_Image {
     background-image: linear-gradient(var(--colour-1),rgba(0, 0, 0, 0),rgba(0, 0, 0, 0)),url("../../HTML/Images/title_image.jpg");
@@ -98,3 +116,22 @@ nav a:active {
     background-color:var(--colour-contrast-1)
 }
 
+/*Contact Section*/
+#Contact .surround{
+    text-align: center;
+    background-color: var(--colour-dark);
+    color: var(--colour-light);
+}
+#Contact a{
+    text-decoration: none;
+    color: var(--colour-light);
+}
+#Contact i {
+    padding: 1vh 1vw;
+    text-decoration: none;
+}
+
+/*Address Section*/
+address {
+    text-align: center;
+}
