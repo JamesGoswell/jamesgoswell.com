@@ -9,9 +9,9 @@
     --colour-dark: #000000;
     --colour-light: #FFFFFF;
 }
-#Experience img, #Contact, .WiP {
-    display: none;
-}
+/*#Experience img, .WiP {*/
+/*    display: none;*/
+/*}*/
 
 .WiP {
     color: red;
@@ -113,13 +113,16 @@ nav a:active {
     background-color: var(--colour-3);
     color: var(--colour-light);
 }
+nav i {
+    padding: 1vh 1vw;
+}
 
 .blog {
     background-color:var(--colour-contrast-1)
 }
 
 /*Nav Toggle*/
-.navToggle{
+.navIcon{
     cursor: pointer;
     display: none;
 }
@@ -180,23 +183,20 @@ address {
     text-align: center;
 }
 
-@media screen and (max-width: 800px) {
-    nav {
-        display: block;
-    }
-    nav a {
-        display: block;
-    }
-
-    nav br {
+@media screen and (max-width: 700px) {
+    nav a, nav img, nav br{
         display: none;
     }
 
-    nav img {
-        display: none;
+    .navIcon{
+        display: block;
+        padding: 0 1vw
     }
-    .navToggle{
+    .navShow{
         display: block;
     }
-
+    .navShow a{
+        display: block;
+        padding: 0;
+    }
 }
