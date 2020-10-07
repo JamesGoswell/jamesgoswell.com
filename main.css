@@ -159,10 +159,13 @@ nav i {
 }
 #Experience img {
     border: 5px outset var(--colour-2);
-    border-radius: 2vh;
     padding: 1vh 1vw;
     object-fit: contain;
     max-height: 85px;
+}
+.dashBreak {
+    display: inline;
+    height: 0;
 }
 
 .stars {
@@ -190,9 +193,6 @@ address {
 }
 
 @media screen and (max-width: 700px) {
-    #Experience img {
-        display: none;
-    }
     nav a, nav img, nav br{
         display: none;
     }
@@ -206,5 +206,13 @@ address {
     .navShow a{
         display: block;
         padding: 0;
+    }
+
+    #Experience img {
+        display: none;
+    }
+    .dashBreak {
+        visibility: hidden;
+        display: block;
     }
 }
