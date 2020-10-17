@@ -63,24 +63,10 @@ section {
     width: 100%;
 }
 .surround {
-    /*margin: 0 3vw;*/
     margin: auto;
     padding: 2vh 2vw;
     background-color: var(--colour-light);
     max-width: 50em;
-    /*width: 98%;*/
-}
-
-/*Tables*/
-.table {
-    display: table;
-    width: 100%;
-}
-.table_row {
-    display: table-row;
-}
-.table_col {
-    display: table-cell;
 }
 
 /*Title Section*/
@@ -170,7 +156,7 @@ nav i {
 }
 
 /*Profile TODO Image*/
-#Profile .container {
+.container {
     display: table;
     table-layout: fixed;
     width: 100%;
@@ -196,7 +182,6 @@ nav i {
 #Profile p{
     margin-top: 0;
 }
-
 #Profile a {
     /*margin: auto;*/
     /*width: ;*/
@@ -228,8 +213,20 @@ nav i {
 .stars {
     color: var(--colour-contrast-2);
 }
-.reference{
-    /*float: left;*/
+/*#Abilities .surround {*/
+/*    padding: 2vh 1vw;*/
+/*}*/
+/*#Abilities .container{*/
+/*    border-collapse: separate;*/
+/*    border-spacing: 0 1vw;*/
+/*}*/
+.container_ref{
+    display: table-cell;
+    border: var(--colour-1) solid 1px;
+}
+.container_ref img {
+    display: block;
+    margin: auto;
 }
 
 /*Contact*/
