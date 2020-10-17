@@ -9,43 +9,19 @@
     <link href="http://fonts.googleapis.com/css2?family=Exo+2&family=Montserrat&family=Open+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="main.css">
     <script src="https://kit.fontawesome.com/bd9a6311b1.js" crossorigin="anonymous"></script>
-    <script>
-        function stars(n) {
-            let star_text = "";
-            let c = 0;
-
-            while (n > 0.5) {
-                star_text += '<i class="fas fa-star stars"></i>';
-                n--;
-                c++;
-            }
-            if (n == 0.5) {
-                star_text += '<i class="fas fa-star-half-alt stars"></i>';
-                c++;
-            }
-            while (c<5) {
-                star_text += '<i class="far fa-star stars"></i>';
-                c++;
-            }
-            return document.write(star_text);
-        }
-        function navtoggle(x) {
-            x.classList.toggle("change");
-            document.getElementById("nav").classList.toggle("navShow")
-        }
-    </script>
+    <script src="index.js"></script>
 </head>
 <body>
     <h1 class="WiP">THIS WEBSITE IS A WORK IN PROGRESS</h1>
+<!--    <canvas id="Test"></canvas>-->
+    <script src="Script/simplex_marching_squares.js"></script>
     <header class="Title_Image">
         <div class="Title_Text">
             <h2>Hey, I'm</h2>
-            <h1><img src="Images/mono-j.svg" alt="J">ames <img src="Images/mono-g.svg" alt="G">oswell</h1>
+            <h1>James Goswell</h1>
         </div>
     </header>
 
-
-<!--    <nav class="navShow">-->
     <nav id="nav">
         <div class="navIcon" onclick="navtoggle(this)">
             <div class="topbar"></div>
@@ -87,10 +63,24 @@
     <section id="Profile">
         <h2>About Me</h2>
         <div class="surround">
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas volutpat neque dictum tristique tempus. Donec ornare imperdiet lacus in sollicitudin. Integer at turpis leo. Maecenas molestie mauris in lectus commodo, in accumsan tortor tempus. Fusce faucibus leo eu purus mattis, at vehicula velit egestas. Donec vel urna malesuada, mollis lorem nec, viverra neque. Morbi pellentesque lacus vitae gravida consequat.<br>
-                Nulla semper tincidunt convallis. In imperdiet auctor facilisis. Phasellus viverra ligula quis odio lobortis luctus. Etiam non dignissim velit. In sed vestibulum augue. Nam vel enim eu dui cursus ullamcorper eu ac mauris. Maecenas sed ullamcorper nisl. Nulla viverra felis vel felis cursus vestibulum. Cras sit amet malesuada ex, eu blandit arcu. Pellentesque pulvinar dolor mi, at aliquet libero maximus sed.
-            </p>
+            <div class="container">
+                <div class="container_img">
+<!--                    <p>an image th</p>-->
+                    <img src="Images/profile.jpg" alt="Picture of me">
+                </div>
+                <div class="container_text">
+                    <p>
+                        Welcome,
+                        Since a young age, I've played field hockey
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas volutpat neque dictum tristique tempus. Donec ornare imperdiet lacus in sollicitudin. Integer at turpis leo. Maecenas molestie mauris in lectus commodo, in accumsan tortor tempus. Fusce faucibus leo eu purus mattis, at vehicula velit egestas. Donec vel urna malesuada, mollis lorem nec, viverra neque. Morbi pellentesque lacus vitae gravida consequat.<br>
+                        Nulla semper tincidunt convallis. In imperdiet auctor facilisis. Phasellus viverra ligula quis odio lobortis luctus. Etiam non dignissim velit. In sed vestibulum augue. Nam vel enim eu dui cursus ullamcorper eu ac mauris. Maecenas sed ullamcorper nisl. Nulla viverra felis vel felis cursus vestibulum. Cras sit amet malesuada ex, eu blandit arcu. Pellentesque pulvinar dolor mi, at aliquet libero maximus sed.
+
+                    </p>
+                    <a href="blog.html" class="blog">
+                        <i class="fas fa-pencil-alt"></i> Pick My Brain More!
+                    </a>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -123,8 +113,13 @@
                 <h3>Computer Science and Mathematics BSc</h3>
                 <h3>2016-20</h3>
                 <h4><i class="fas fa-map-pin"></i> Sheffield, S. Yorks<div class="dashBreak"> - </div><i class="fas fa-link"></i> www.sheffield.co.uk</h4>
-                <p>I completed my degree with a first class honours.<br>
-                    Nulla facilisi. Donec vel porttitor felis. Sed eget sem semper, tempus lacus at, consequat erat. Curabitur a velit sed sapien tincidunt condimentum. Nullam pharetra cursus tellus, sed semper leo laoreet vitae. Vivamus a vehicula mi. Praesent egestas diam sit amet aliquet tempor.</p>
+                <p>Through my life in Sheffield, I achieved a first class honours.<br>
+                    In my final year, I was awarded the 'Software Hut Prize' by our client in recognition of software development</p>
+
+<!--                2019-20 Software Hut Prize (Client)-->
+<!--                ‘This prize is awarded once annually in recognition of the software development for a real-world client. Students compete, in teams, to develop the most effective software, following an agile development process in close collaboration with their client. This student was a member of a winning team, as deemed by the team’s client’-->
+
+
             </article>
             <article>
                 <div class="Logos"><img src="https://www.stokesleyschool.org/wp-content/uploads/2020/01/StokesleySchool-logo.png" alt="Stokesley School Logo"></div>
@@ -132,7 +127,8 @@
                 <h3>A-Levels & GCSE</h3>
                 <h3>2009-16</h3>
                 <h4><i class="fas fa-map-pin"></i> Stokesley, N. Yorks<div class="dashBreak"> - </div><i class="fas fa-link"></i> www.stokesleyschool.org</h4>
-                <p>Vestibulum sollicitudin nunc vel dui ullamcorper tincidunt ac et risus. Sed velit ex, rhoncus quis nunc ut, auctor aliquam turpis. Pellentesque congue augue sit amet odio lobortis, eu volutpat augue dignissim. Fusce ut est lacus. Phasellus eget pulvinar turpis. Sed vehicula sem ac justo gravida, non dictum felis interdum. Nulla in ante consectetur tortor sodales ultricies.</p>
+                <p>
+                    Vestibulum sollicitudin nunc vel dui ullamcorper tincidunt ac et risus. Sed velit ex, rhoncus quis nunc ut, auctor aliquam turpis. Pellentesque congue augue sit amet odio lobortis, eu volutpat augue dignissim. Fusce ut est lacus. Phasellus eget pulvinar turpis. Sed vehicula sem ac justo gravida, non dictum felis interdum. Nulla in ante consectetur tortor sodales ultricies.</p>
             </article>
         </div>
     </section>
@@ -235,6 +231,27 @@
                 </table>
             </article>
         </div>
+        <h2>Don't just take my word for it!</h2>
+        <div class="surround">
+            <article class="reference">
+                <img src="Images/ref_person1">
+                <h3>Person 1</h3>
+                <h4>Job Des/rel</h4>
+                <p>James is Lorem ispem vestibulum sollicitudin nunx vel dui ullamcirper</p>
+            </article>
+            <article class="reference">
+                <img src="Images/ref_person2">
+                <h3>Person 2</h3>
+                <h4>Job Des/rel</h4>
+                <p>James is Lorem ispem vestibulum sollicitudin nunx vel dui ullamcirper</p>
+            </article>
+            <article class="reference">
+                <img src="Images/ref_person3">
+                <h3>Person 3</h3>
+                <h4>Job Des/rel</h4>
+                <p>James is Lorem ispem vestibulum sollicitudin nunx vel dui ullamcirper</p>
+            </article>
+        </div>
     </section>
 
 
@@ -263,7 +280,7 @@
 
 
     <section id="Contact">
-        <h2>How To Get In Touch</h2>
+        <h2>Keep In Touch</h2>
         <div class="surround">
             <a href="Docs/resume.pdf"><i class="fas fa-download"></i>My Resume (Not inserted yet)</a><br>
             <a href="https://www.google.co.uk/maps/place/North+Yorkshire">
