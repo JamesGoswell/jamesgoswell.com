@@ -1,4 +1,5 @@
 function stars(n) {
+    // TODO Remove document.write()
     let star_text = "";
     let c = 0;
 
