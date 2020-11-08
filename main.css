@@ -97,12 +97,10 @@ section {
     background-size: cover;
     background-repeat: no-repeat;
 }
-
 .Title_Text {
     background-color: var(--colour-light);
     padding: 1vh 5vw;
 }
-
 .Title_Text h1 {
     /*padding: 0 5vw;*/
     margin: 0;
@@ -384,9 +382,9 @@ nav i {
 
 
 /*Abilities*/
-.stars {
-    color: var(--colour-contrast-2);
-}
+/*.stars {*/
+/*    color: var(--colour-contrast-2);*/
+/*}*/
 /*#Abilities .surround {*/
 /*    padding: 2vh 1vw;*/
 /*}*/
@@ -402,6 +400,11 @@ nav i {
     display: block;
     margin: auto;
 }
+
+/*Projects*/
+/*canvas {*/
+/*    margin: 0 auto;*/
+/*}*/
 
 /*Contact*/
 #Contact .surround{
