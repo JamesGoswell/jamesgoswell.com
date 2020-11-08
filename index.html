@@ -16,14 +16,19 @@
         The Blog Page Hasn't Been Created Yet!</h1>
 <!--    <canvas id="Test"></canvas>-->
 <!--    <script src="Script/simplex_marching_squares.js"></script>-->
-    <header class="Title_Image">
-        <div class="Title_Text">
-            <h2>Hey, I'm</h2>
-            <h1>James Goswell</h1>
+        <div class="Title_Image">
+            <div class="Title_Text">
+                <h2>Hey, I'm</h2>
+                <h1>James Goswell</h1>
+                <a href="#Contact">
+                    <i class="fas fa-envelope"></i> Say Hello!
+                </a>
+            </div>
         </div>
-    </header>
+
 
     <nav id="nav">
+<!--        TODO do I want a moving menu icon-->
         <div class="navIcon" onclick="navtoggle(this)">
             <div class="topbar"></div>
             <div class="midbar"></div>
@@ -66,7 +71,6 @@
         <div class="surround">
             <div class="container">
                 <div class="container_img">
-<!--                    <p>an image th</p>-->
                     <img src="Images/profile.jpg" alt="Picture of me">
                 </div>
                 <div class="container_text">
@@ -165,11 +169,11 @@
                         <td><script>stars(3.5)</script></td>
                     </tr>
                     <tr>
-                        <td>Java</td>>
-                        <td><script>stars(3)</script></td>>
+                        <td>Java</td>
+                        <td><script>stars(3)</script></td>
                     </tr>
                     <tr>
-                        <td>HTML, CSS and Javascript</td>>
+                        <td>HTML, CSS and Javascript</td>
                         <td><script>stars(2)</script></td>
                     </tr>
                     <tr>
@@ -314,7 +318,22 @@
                 <i class="fab fa-github"></i>www.github.com/JamesGoswell</a><br>
             Want to contact me? I'd prefer a text during normal working hours!
             </div>
-            <form></form>
+            <h3 class="WiP">Form not complete</h3>
+            <form method="post" action="formComplete.php">
+                <label for="fname">First Name / Preferred Name</label>
+                <input type="text" id="fname" name="firstname" placeholder="Your Name...">
+
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" name="lastname" placeholder="Your Last Name...">
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Your Email...">
+
+                <label for="subject">Subject</label>
+                <textarea id="subject" placeholder="Your Message..."></textarea>
+
+                <input type="submit" value="Submit">
+            </form>
         </div>
     </section>
 

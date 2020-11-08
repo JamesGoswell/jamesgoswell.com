@@ -1,13 +1,27 @@
 /*General*/
 :root {
-    --colour-1: #174e65;
-    --colour-2: #B2C0C9;
-    /*--colour-2: #8DA2AF;*/
+    /*colours*/
+    /*!*blue and coral theme*!*/
+    /*--colour-1: #174e65;*/
+    /*--colour-2: #B2C0C9;*/
+    /*--colour-3: #000000; !*hover*!*/
+    /*--colour-contrast-1: #F08080; !*Blog, Circle*!*/
+    /*--colour-contrast-2: #D4AF37; !*Stars*!*/
+    /*--colour-dark: #000000;*/
+    /*--colour-light: #FFFFFF;*/
+
+    /*teal and orange theme*/
+    --colour-1: #008080;
+    --colour-2: #eeab59;
     --colour-3: #000000; /*hover*/
-    --colour-contrast-1: #F08080; /*Blog, Circle*/
+    --colour-contrast-1: #db7ef1; /*Blog, Circle*/
     --colour-contrast-2: #D4AF37; /*Stars*/
     --colour-dark: #000000;
     --colour-light: #FFFFFF;
+
+    /*height*/
+    /*TODO check this height*/
+    --nav-height: 1em;
 }
 /*img, .WiP{*/
 /*    display: none;*/
@@ -25,7 +39,9 @@
 body, html {
     font-family: 'Open Sans', sans-serif;
     text-align: justify;
-    height: 100%;
+    scroll-padding-top: calc(5vh + 3.16em); /*TODO Correct sizes*/
+    margin: 0;
+
 }
 
 h1 {
@@ -69,22 +85,26 @@ section {
 
 /*Title Section*/
 .Title_Image {
+    width: 100vw;
+    /*height: 50vh;*/
+    height: 50vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
     background-image: linear-gradient(var(--colour-1),rgba(0, 0, 0, 0),rgba(0, 0, 0, 0)),url("Images/title.jpg");
-    height: 50%;
-    background-position: center;
-    background-repeat: no-repeat;
     background-size: cover;
-    position: relative;
+    background-repeat: no-repeat;
 }
+
 .Title_Text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-.Title_Text h1 {
     background-color: var(--colour-light);
-    padding: 0 5vw;
+    padding: 1vh 5vw;
+}
+
+.Title_Text h1 {
+    /*padding: 0 5vw;*/
     margin: 0;
 }
 .Title_Text h2 {
@@ -92,9 +112,24 @@ section {
     margin: 0;
     border-radius: 0;
 }
+.Title_Text a {
+    text-decoration: none;
+    text-align: center;
+
+    display: block;
+
+    color: var(--colour-dark);
+    background-color: var(--colour-contrast-1);
+    padding: 0.5em;
+    margin: 0.83em auto;
+    border: 3px solid var(--colour-2);
+    /*background-color: var(--colour-contrast-1);*/
+    border-radius: 20px;
+}
 
 /*Navigation Bar*/
 nav {
+    z-index: 9999;
     display: flex;
     padding: 0;
     width: 100%;
@@ -154,6 +189,13 @@ nav i {
 }
 
 /*Profile TODO Image*/
+/*.container {*/
+/*    display: flex;*/
+/*    flex-direction: row;*/
+/*}*/
+/*.container_img, .container_text{*/
+
+/*}*/
 .container {
     display: table;
     table-layout: fixed;
@@ -164,6 +206,7 @@ nav i {
     max-width: 50%;
     padding-right: 1vw;
     /*background-color: red;*/
+    height: 100%;
 }
 .container_text {
     display: table-cell;
@@ -174,7 +217,7 @@ nav i {
 .container_img img {
     object-fit: cover;
     width: 100%;
-    /*margin-right: 1vh;*/
+    /*height: 100%*/
 }
 
 #Profile p{
@@ -374,6 +417,16 @@ nav i {
     padding: 1vh 1vw 1vh 0;
 }
 
+input[type=text], textarea, input[type=email] {
+    width: 100%;
+}
+input[type=submit] {
+    background-color: var(--colour-contrast-1);
+}
+input[type=submit]:hover {
+    background-color: var(--colour-contrast-1);
+}
+
 /*Address Section*/
 address {
     text-align: center;
@@ -403,6 +456,9 @@ address {
 
     .container, .container_img, .container_text {
         display: block;
+    }
+    .container_img {
+        max-width: 100%;
     }
     #Experience img {
         display: none;
