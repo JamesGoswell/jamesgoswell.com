@@ -1,323 +1,378 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="author" content="James Goswell">
     <meta name="description" content="CS and Maths Graduate and Hockey Player">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>James Goswell's Portfolio</title>
-    <link href="http://fonts.googleapis.com/css2?family=Exo+2&family=Montserrat&family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Montserrat&family=Open+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="main.css">
     <script src="https://kit.fontawesome.com/bd9a6311b1.js" crossorigin="anonymous"></script>
-    <script src="index.js"></script>
+
 </head>
-<body>
-    <h1 class="WiP">THIS WEBSITE IS A WORK IN PROGRESS <br>
-        The Blog Page Hasn't Been Created Yet!</h1>
-<!--    <canvas id="Test"></canvas>-->
-<!--    <script src="Script/simplex_marching_squares.js"></script>-->
-
-
-    <div class="Title_Image">
-        <div class="Title_Text">
-            <h2>Hey, I'm</h2>
+<body class="bodypush">
+    <header id="Home" class="title-img">
+        <div class="title-txt">
             <h1>James Goswell</h1>
-            <a href="#Contact">
-                <i class="fas fa-envelope"></i> Say Hello!
-            </a>
+            <h2>Activating Information</h2>
         </div>
-    </div>
-
-
-    <nav id="nav">
-<!--        TODO do I want a moving menu icon-->
-        <div class="navIcon" onclick="navtoggle(this)">
-            <div class="topbar"></div>
-            <div class="midbar"></div>
-            <div class="botbar"></div>
-        </div>
-        <img src="Images/mono.svg" alt="JG Monogram">
-        <a href="#">
-            <i class="fas fa-home"></i><br>
-            Home
-        </a>
-        <a href="#Profile">
-            <i class="fas fa-user"></i><br>
-            Profile
-        </a>
-        <a href="#Experience">
-            <i class="fas fa-industry"></i><br>
-            Experience
-        </a>
-        <a href="#Abilities">
-            <i class="fas fa-clipboard-check"></i><br>
-            Abilities
-        </a>
-        <a href="#Projects">
-            <i class="fas fa-brain"></i><br>
-            Projects
-        </a>
-        <a href="#Contact">
-            <i class="fas fa-envelope"></i><br>
-            Contact
-        </a>
-        <a href="blog.html" class="blog">
-            <i class="fas fa-pencil-alt"></i><br>
-            Blog
-        </a>
-    </nav>
-
+    </header>
 
     <section id="Profile">
-        <h2>About Me</h2>
-        <div class="surround">
+        <div class="section-indent">
             <div class="container">
-                <div class="container_img">
-                    <img src="Images/profile.jpg" alt="Picture of me">
+                <div class="item">
+                    <div class="profile-img">
+                    </div>
                 </div>
-                <div class="container_text">
+                <div class="item">
+                    <h2>About Me</h2>
                     <p>
-                        Welcome,<br>
-                        I'm James,
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas volutpat neque dictum tristique tempus. Donec ornare imperdiet lacus in sollicitudin. Integer at turpis leo. Maecenas molestie mauris in lectus commodo, in accumsan tortor tempus. Fusce faucibus leo eu purus mattis, at vehicula velit egestas. Donec vel urna malesuada, mollis lorem nec, viverra neque. Morbi pellentesque lacus vitae gravida consequat.<br>
-                        Nulla semper tincidunt convallis. In imperdiet auctor facilisis. Phasellus viverra ligula quis odio lobortis luctus. Etiam non dignissim velit. In sed vestibulum augue. Nam vel enim eu dui cursus ullamcorper eu ac mauris. Maecenas sed ullamcorper nisl. Nulla viverra felis vel felis cursus vestibulum. Cras sit amet malesuada ex, eu blandit arcu. Pellentesque pulvinar dolor mi, at aliquet libero maximus sed.
-
+                        I graduated in June 2020 with a first-class honours degree in Computer Science with Mathematics from The University of Sheffield, which was a four-year course including a year in industry at a major multinational manufacturer. My original plan was to take a gap year for my personal development, but this was made impossible by the pandemic, and the difficulties experienced by all new graduates entering employment has made starting my career much more difficult than I originally expected.  I have been fortunate to undertake some paid employment which utilised my IT and data management skills, at a company with international business connections.  I have made use of my time by developing my knowledge of web design and coding languages. With the economy beginning to open again, I am now looking to properly embark on my career.
                     </p>
-                    <a href="blog.html" class="blog">
-                        <i class="fas fa-pencil-alt"></i> Pick My Brain More!
-                    </a>
+                    <p>
+                        Due to my valuable work experience at two blue chip companies, I have been able to demonstrate my innovative thinking, dedication and flexibility to work effectively within a team. My willingness to delve deeper into the tasks I have been given has led to a greater knowledge base and demonstrated my passion for problem solving.
+                    </p>
+                    <p>
+                        I foresee being able to use my skills to help develop and improve businesses for both stakeholders and the environment. I am an adaptable graduate, excited by innovation and change, and relish the challenge of working with new technologies and platforms.
+                    </p>
+                    <p>
+                        My outside interests are multi-faceted, including technology, sport and art. They have enhanced every aspect of my life and ensure a sustainable work life balance.
+                    </p>
+                    <a href="#Contact"><h3>Contact Me</h3></a>
+                    <a href="Docs/resume.pdf"><h3>Download CV</h3></a>
                 </div>
+
             </div>
         </div>
     </section>
-
 
     <section id="Experience">
-        <h2>What Have I Done?</h2>
-        <div class="surround">
-            <div class="timeline">
-                <div class="event left">
-                    <article>
-                        <div class="Logos"><img src="https://www.quorn.co.uk/img/g/quorn_logo.png" alt="Quorn Logo"></div>
-                        <h3>Quorn</h3>
-                        <h3>Accounts Payable Assistant</h3>
-                        <h3>2020</h3>
-                        <h4><i class="fas fa-map-pin"></i> Stokesley, N. Yorks<div class="dashBreak"> - </div><i class="fas fa-link"></i> www.quorn.co.uk</h4>
-                        <p>Aliquam erat volutpat. Nulla rutrum cursus neque, vitae fringilla lorem pellentesque ut. Morbi sed tristique erat. Nunc ac nunc vel ligula scelerisque aliquam sed at quam. Praesent nec posuere ante. Nunc non euismod massa. Sed mollis mollis commodo.</p>
-                    </article>
-                </div>
-                <div class="event right">
-                    <article>
-                        <div class="Logos"><img src="https://www.sheffield.ac.uk/themes/custom/uos/images/uos-crest.svg" alt="UoS Logo"></div>
-                        <h3>University of Sheffield</h3>
-                        <h3>Computer Science and Mathematics BSc</h3>
-                        <h3>2016-20</h3>
-                        <h4><i class="fas fa-map-pin"></i> Sheffield, S. Yorks<div class="dashBreak"> - </div><i class="fas fa-link"></i> www.sheffield.co.uk</h4>
-                        <p>Through my life in Sheffield, I achieved a first class honours.<br>
-                            In my final year, I was awarded the 'Software Hut Prize' by our client in recognition of software development</p>
-                    <!--                2019-20 Software Hut Prize (Client)-->
-                    <!--                ‘This prize is awarded once annually in recognition of the software development for a real-world client. Students compete, in teams, to develop the most effective software, following an agile development process in close collaboration with their client. This student was a member of a winning team, as deemed by the team’s client’-->
-                    </article>
-                </div>
-                <div class="event left">
-                    <article>
-                        <div class="Logos"><img src="https://www.quorn.co.uk/img/g/quorn_logo.png" alt="Quorn Logo"></div>
-                        <h3>Quorn</h3>
-                        <h3>Purchase Ledger Admin Assistant</h3>
-                        <h3>2019</h3>
-                        <h4><i class="fas fa-map-pin"></i> Stokesley, N. Yorks<div class="dashBreak"> - </div><i class="fas fa-link"></i> www.quorn.co.uk</h4>
-                        <p>Aliquam erat volutpat. Nulla rutrum cursus neque, vitae fringilla lorem pellentesque ut. Morbi sed tristique erat. Nunc ac nunc vel ligula scelerisque aliquam sed at quam. Praesent nec posuere ante. Nunc non euismod massa. Sed mollis mollis commodo.</p>
-                    </article>
-                </div>
-                <div class="event left">
-                    <article>
-                        <div class="Logos">
-                            <img src="https://www.bmwgroup.com/etc.clientlibs/bmwgroup/clientlibs/clientlib-site/resources/img/brands/group.png" alt="BMW Group Logo">
-                            <img src="https://www.bmwgroup.com/etc.clientlibs/bmwgroup/clientlibs/clientlib-site/resources/img/brands/mini_logo.png" alt="Mini Logo">
-                        </div>
-                        <h3>BMW Group</h3>
-                        <h3>Programme Planning and Production Control Intern</h3>
-                        <h3>2018-19</h3>
-                        <h4><i class="fas fa-map-pin"></i> Oxford, Oxon<div class="dashBreak"> - </div><i class="fas fa-link"></i> www.mini.co.uk</h4>
-                        <p>Integer convallis eu ipsum sit amet accumsan. In et augue eget mauris blandit posuere eu at ex. Quisque euismod mattis justo, vel fermentum nisl. Mauris eleifend odio a tincidunt efficitur. Nulla suscipit massa sit amet pretium scelerisque. Sed porttitor, sem ut porttitor rutrum, dui tellus volutpat est, eget auctor orci ligula sed elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vestibulum viverra mauris eu gravida tincidunt. Pellentesque in arcu et lorem faucibus fringilla. Curabitur suscipit nisl nec cursus vehicula. Duis dictum dolor nec volutpat tristique. Donec non hendrerit lorem. Praesent in nibh in sapien rhoncus sollicitudin.</p>
-                    </article>
-                </div>
-                <div class="event right">
-                    <article>
-                        <div class="Logos"><img src="https://www.stokesleyschool.org/wp-content/uploads/2020/01/StokesleySchool-logo.png" alt="Stokesley School Logo"></div>
-                        <h3>Stokesley School & 6<sup>th</sup> Form College</h3>
-                        <h3>A-Levels & GCSE</h3>
-                        <h3>2009-16</h3>
-                        <h4><i class="fas fa-map-pin"></i> Stokesley, N. Yorks<div class="dashBreak"> - </div><i class="fas fa-link"></i> www.stokesleyschool.org</h4>
-                        <p>
-                            Vestibulum sollicitudin nunc vel dui ullamcorper tincidunt ac et risus. Sed velit ex, rhoncus quis nunc ut, auctor aliquam turpis. Pellentesque congue augue sit amet odio lobortis, eu volutpat augue dignissim. Fusce ut est lacus. Phasellus eget pulvinar turpis. Sed vehicula sem ac justo gravida, non dictum felis interdum. Nulla in ante consectetur tortor sodales ultricies.</p>
-                    </article>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-    <section id="Abilities">
-        <h2>What am I Good at?</h2>
-        <div class="surround">
-            <article>
-                <h3>Languages</h3>
-                <table>
-                    <tr>
-                        <td>Python</td>
-                    </tr>
-                    <tr>
-                        <td>SQL</td>
-                    </tr>
-                    <tr>
-                        <td>Java</td>
-                    </tr>
-                    <tr>
-                        <td>HTML, CSS and Javascript</td>
-                    </tr>
-                    <tr>
-                        <td>Haskell</td>
-                    </tr>
-                    <tr>
-                        <td>VBA (MS Office PL)</td>
-                    </tr>
-                    <tr>
-                        <td>English</td>
-                    </tr>
-                </table>
-                <p>I more than willing to learn more languages, and further my knowledge.</p>
-            </article>
-
-            <article>
-                <h3>Tools</h3>
-                <table>
-                    <tr>
-                        <td>MS Excel</td>
-                    </tr>
-                    <tr>
-                        <td>MS Access</td>
-                    </tr>
-                    <tr>
-                        <td>MS Office</td>
-                    </tr>
-                </table>
-            </article>
-
-            <article>
-                <h3>Attributes</h3>
-                <table>
-                    <tr>
-                        <td>Lorem</td>
-                    </tr>
-                    <tr>
-                        <td>Lorem</td>
-                    </tr>
-                    <tr>
-                        <td>Lorem</td>
-                    </tr>
-                    <tr>
-                        <td>Lorem</td>
-                    </tr>
-                    <tr>
-                        <td>Lorem</td>
-                    </tr>
-                </table>
-            </article>
-        </div>
-        <h2>Don't just take my word for it!</h2>
-        <div class="surround">
+        <div class="section-indent">
             <div class="container">
-                <article class="container_ref">
-                    <img src="https://via.placeholder.com/100x100.png">
-                    <h3>Person 1</h3>
-                    <h4>Job Des/rel</h4>
-                    <p>James is Lorem ispem vestibulum sollicitudin nunx vel dui ullamcirper</p>
-                </article>
-                <article class="container_ref">
-                    <img src="https://via.placeholder.com/100x100.png">
-                    <h3>Person 2</h3>
-                    <h4>Job Des/rel</h4>
-                    <p>James is Lorem ispem vestibulum sollicitudin nunx vel dui ullamcirper</p>
-                </article>
-                <article class="container_ref">
-                    <img src="https://via.placeholder.com/100x100.png">
-                    <h3>Person 3</h3>
-                    <h4>Job Des/rel</h4>
-                    <p>James is Lorem ispem vestibulum sollicitudin nunx vel dui ullamcirper</p>
-                </article>
+                <h2>My Experience</h2>
+            </div>
+
+            <div class="exp-sec">
+                <h4>Work Experience</h4>
+                <div class="container">
+                    <div class="exp-logo">
+                        <img src="Images/quorn-logo.svg" alt="Quorn Logo">
+                    </div>
+                    <div class="exp-text">
+                        <h3>Quorn Foods</h3>
+                        <h3>Stokesley, N. Yorks</h3>
+                        <h3>Jul 2019 - Sep 2019, Oct 2020 - Nov 2020</h3>
+                        <p>
+                            Quorn is the world-leading manufacturer of meat alternative foodstuffs producing over 500 million servings a year with global sales and strong environmental credentials.
+                        </p>
+                        <p>
+                            My initial attachment there was in the summer vacation period between my 3rd and 4th years at Sheffield and was self-organised as their base is located close to my family home.  My role was to help optimise the newly installed SAP S/4 HANA system in the Accounts Payable (AP) department. An add-on software package, itCapture, needed configuring to automatically process alphanumeric input via Optical Character Recognition (OCR) and hence transact supplier invoices. Therefore, I self-taught myself this OCR-based software, embarked on the systemised "learning” to capture the input, and then began training the existing AP team. At the end of my first 2-month assignment over 30% of the invoices received by the company were being automatically transacted, compared to near zero at the beginning.  This helped improve the efficiency of the AP team.
+                        </p>
+                        <p>
+                            I received much positive feedback while with Quorn. A senior member of the finance department fed back on my work ethic, commenting how I saw tasks as a challenge rather than an obligation. It was noted how I had informally mentored a colleague helping them to gain confidence and query the current processes too.
+                        </p>
+                        <p>
+                            I returned for a second period of 4 weeks after graduation to help overcome some specific issues with the system.  Due to the pandemic, I spent this time working remotely: this was a highly valuable experience of the way in which future working practice will develop.  I set up a suitable home working environment, organised myself to work at appropriate set times, handled phone calls and emails, and undertook meetings remotely using Skype, and MS Teams. During this period, I enabled them to raise the overall automated processing of invoices from 75% to over 85%. As a result, the productivity of the AP department has improved further, allowing a stable headcount despite the continued growth of the business.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="container">
+                    <div class="exp-logo">
+                        <img src="Images/mini-logo.jpg" alt="Mini Logo">
+                    </div>
+                    <div class="exp-text">
+                        <h3>BMW Group</h3>
+                        <h3>Cowley, Oxon</h3>
+                        <h3>Jun 2018 - Jun 2019</h3>
+                        <p>
+                            As the third year of my degree course was to be spent in industry, I was privileged to secure a thirteen-month internship with BMW at the Mini Plant Oxford. Few cars can claim the iconic status and recognisability as the MINI.
+                        </p>
+                        <p>
+                            I was assigned to the TU-O-10 department, which is responsible for Production Control and Programme Planning. I was given responsibility for continuously improving the throughput and stability of production throughout the factory. My primary focus was the routing of car bodies within the paint shop, which is essential to maintaining productivity as every car is assembled to a customer’s order.
+                        </p>
+                        <p>
+                            Building on BMW’s approach to LEAN manufacturing, “Value Added Production System” (VPS) I managed my own workflow, employing advanced Excel features and self-written SQL to process data generated within the factory, I introduced measures to recommend changes leading to increased sequence stability in assembly, one of the KPIs reflected upon.
+                        <p>
+                            On occasions, I was set on the spot responsibility for sequencing bodies to the assembly line. This role contributed to retaining arrangements for test models such as the new electric Mini before release.
+                        </p>
+                        <p>
+                            I participated in creating the monthly Newsletter which is distributed within Logistics. This involved seeking contributions and creating articles relaying important changes to the factory and ensuring transparency to all. The group also reported on out of work news items such as charity events and team building exercises.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="container">
+                    <div class="exp-logo">
+                    </div>
+                    <div class="exp-text">
+                        <div class="accordion"><h3><div class="fas fa-chevron-down"></div><div class="fas fa-chevron-up"></div> Additional Work Experience</h3></div>
+                        <div class="panel">
+                            <h3>SP&A Architects</h3>
+                            <p>
+                                At SP&A, I had a week’s experience, where I accompanied one of the directors on site visits, and to client meetings. I also used the basics of CAD and SketchUp Software to design a property within given building constraints.
+                            </p>
+                            <h3>Bicester and Marton Furness Hockey Clubs</h3>
+                            <p>
+                                In addition to playing at both these clubs, I led skill-based sessions in collaboration with the head coach, and supported with performance and fitness development.
+                            </p>
+
+                            <h3>Carlton & Faceby and Bilsdale Midcable Chop Gate Primary Schools</h3>
+                            <p>
+                                Alongside the PE co-ordinator, I planned, delivered and assessed coaching sessions for the children and supported teachers in their delivery, as needed, during National Sports Week.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="exp-sec">
+                <h4>Education</h4>
+                <div class="container">
+                    <div class="exp-logo"><img src="Images/UoS-logo.png" alt="University of Sheffield Logo"></div>
+                    <div class="exp-text">
+                        <h3>University of Sheffield</h3>
+                        <h3>Computer Science and Mathematics with a Year in Industry (GG42)</h3>
+                        <h3>2016-2020</h3>
+                        <p>
+                            After 4 years at university, I am proud to have concluded with a first-class honours degree in Computer Science and Mathematics.  This was a near-unique course that I found both challenging and enjoyable.  After being accepted on the course, I initially found I was the only student with this specific course combination and I had to be creative and persistent in ensuring I could arrange all the modules I needed.
+                        </p>
+                        <p>
+                            I balanced my studies with sport, representing the University at hockey and playing for the local club at weekends. With the Peak District being so close, I was able to pursue other interests such as walking, photography and cycling.
+                        </p>
+                    </div>
+                </div>
+                <div class="container">
+                <div class="exp-logo">
+                    <img src="Images/SS6-logo.png" alt="Stokesley School Logo">
+                </div>
+                <div class="exp-text">
+                    <h3>Stokesley School & 6th Form College</h3>
+                    <h3>A-Levels and GCSE</h3>
+                    <h3>2009-2016</h3>
+                    <p>
+                        At Stokesley I attained 4 A-Levels, including A* and A in Mathematics and Further Mathematics respectively, an AS-level in Fine Art and 12 GCSEs graded A* to C.
+                    </p>
+                    <p>
+                        <b>Regional UKMT FMSP Senior Team Maths Challenge Participant 2014</b> I represented the mathematics department with one other pupil
+                    </p>
+                   
+                    <p>
+                        <b>ICT Prize 2011</b> Cited for my consistent hard work, enthusiasm and perseverance, along with my ability to solve problems independently and learn new skills. No challenge was too big or too small!
+                    </p>
+                    <p>
+                        <b>Sport</b> I represented the school playing hockey and rugby. A personal highlight was playing rugby on the Newcastle Falcon's Astroturf pitch.
+                    </p>
+                </div>
+            </div>
+            </div>
+
+            <div class="exp-sec">
+                <h4>Awards</h4>
+                <div class="container">
+                    <div class="exp-logo"><img src="Images/UoS-logo.png" alt="University of Sheffield Logo"></div>
+                    <div class="exp-text">
+                        <h3>University of Sheffield</h3>
+                        <h3>2019-20 Software Hut Prize (Client) Winner</h3>
+                        <p>
+                            ‘This prize is awarded once annually in recognition of the software development for a real-world client. Students compete, in teams, to develop the most effective software, following an agile development process in close collaboration with their client. This student was a member of a winning team, as deemed by the team’s client.’
+                        </p>
+                        <p>
+                            This exercise formed an assessed part of my final year of studies.  Working in a team of five we were allocated a local client within the university who required software developing to record attendance without being intrusive to lectures. Over a period of one term, we delivered a working product, including manuals to the client’s use cases. We used Ruby as the main coding language and developed use case diagrams, database designs and state machine diagrams from UML. During the development process we worked closely alongside the client, through initially face-to-face meetings and as Covid-19 became an increasing concern, remotely. As a team, we successfully overcame issues as they arose, referring to meeting minutes if constraints had already been defined. The software was delivered on time and was valued by the client, receiving the client prize above 38 other teams.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="Skills">
+        <div class="section-indent">
+            <div class="container">
+                <h2>My Strengths</h2>
+            </div>
+            <div class="container">
+                <div class="item">
+                    <h4>Personal Skills</h4>
+                    <p><b>Languages</b> English (German to GCSE)</p>
+                    <p><b>Deep Personal Integrity</b> Employers have found me dependable and value my open, honest communication with others, whilst demonstrating empathy and respect towards them.</p>
+                    <p><b>Strong Analytical Skills</b> I enjoy the challenge of analysing data, both individually and as part of a team to solve problems and to help make business recommendations, such as at BMW. My ability to think outside the box has been recognised.</p>
+                    <p><b>Strong Interpersonal Skills and a Flexible Team Player</b> My experiences have taught me the importance of strong working relationships with all stakeholders. I was praised during the Software Hut for my open communications, ability to listen, willingness to play to individual strengths and taking opportunities to give regular feedback, all of which were vital to the success of the project.</p>
+                    <p><b>Creative and Logical Thinker</b> There are times when individual contributions are vital and where contributions can improve the performance of others, such as when I recognised the need to automate a colleague's daily email reports at BMW and thus improve his work flow.</p>
+                    <p><b>Strong Quality Work Ethic</b> I recognise the need for good time management and organisation for effective working practices, whilst acknowledging the need to go beyond the remit when appropriate.</p>
+                    <p><b>Dyslexic</b> Being dyslexic has provided challenges, particularly when studying to degree level.  Overcoming these challenges and achieving success has made me more adaptable in my working methods, developing strategies and thinking creatively when envisioning results. Now I see it as an advantage as I can often 'think outside the box.'</p>
+                </div>
+                <div class="item">
+                    <h4>Technical Skills</h4>
+                    <p><b>Programming Languages</b> including Python, Java, SQL, Ruby, HTML5, CSS3, Javascript and Haskell.</p>
+                    <p><b>Operating Systems</b> Mainly Windows, but have used some Linux.</p>
+                    <p><b>Suites</b> MS Office, and Google Workspace (formerly G Suite).</p>
+                    <p><b>Collaborative Tools</b> MS Teams, Skype, Slack, Zoom and Discord.</p>
+
+                    <h4>Sports and Social</h4>
+                    <p><b>Hockey</b> I've played hockey for the last 12 years at club, university and regional level. I used to assist coaching on a weekly basis to help with the clubs.</p>
+                    <p><b>Skiing</b> I'm a keen recreational skier. I like to be in the mountains whenever I can.</p>
+                    <p><b>Pool and Snooker</b> During my time working for BMW, I joined a local team pool league. Currently, now unable to play in a league, I play socially.</p>
+                    <p><b>Music</b> I listen to an eclectic range of music genres, as my mood dictates</p>
+                    <p><b>Art, Design and Photography</b> Studied fine art to AS level but now use art, design and photography for self-initiated projects in my leisure time</p>
+
+                </div>
+
+
             </div>
         </div>
     </section>
-
-
-    <section id="Projects">
-        <h2>What Am I Working On?</h2>
-        <div class="surround">
-            <article>
-                <h3>Writing My Own Website</h3>
-                <p>Sed velit ex, rhoncus quis nunc ut, auctor aliquam turpis. Pellentesque congue augue sit amet odio lobortis, eu volutpat augue dignissim. Fusce ut est lacus.</p>
-                <h4>Skills Learnt</h4>
-                <p>Through this project, firstly I've had to develop my HTML, CSS and Javascript, but it has also helped me with more theroretical concepts as colour theory and UX/UI design</p>
-            </article>
-            <article>
-                <h3>Generated Spaces</h3>
-                <p>Inspired by <b>Kjetil Golid</b> at <a target="_blank" href="http://generated.space"><b>generated.space</b></a>,
-                    I'm making a topological looking image using Marching Squares algorithm and Open Simplex Noise.</p>
-                <h4>Skills Learnt</h4>
-                <p>With this project, I've had to learn how to ... In imperdiet auctor facilisis. Phasellus viverra ligula quis odio lobortis luctus. Etiam non dignissim velit.</p>
-<!--                <canvas id="marchingSquareCanvas" height="200" width="200"></canvas>-->
-<!--                <script src="Script/random_marching_squares.js"></script>-->
-                </article>
-        </div>
-        <h2>What Projects Have I Completed</h2>
-        <div class="surround">
-            <article>
-                <h3>As I have only just started this, no projects have been completed!</h3>
-            </article>
-        </div>
-    </section>
-
 
     <section id="Contact">
-        <h2>Keep In Touch</h2>
-        <div class="surround">
-            <div>
-            <a href="Docs/resume.pdf"><i class="fas fa-download"></i>My Resume (Not inserted yet)</a><br>
-            <a href="https://www.google.co.uk/maps/place/North+Yorkshire">
-                <i class="fas fa-map-marker-alt"></i>N. Yorks, England</a><br>
-            <a href="tel:+44 (0)7908 579668">
-                <i class="fas fa-phone"></i>+44 (0)7908 579668</a><br>
-            <a href="mailto:james.goswell@sky.com">
-                <i class="fas fa-at"></i>james.goswell@sky.com</a><br>
-            <a href="https://www.linkedin.com/in/james-goswell/">
-                <i class="fab fa-linkedin-in"></i>www.linkedin.com/in/james-goswell</a><br>
-            <a href="https://www.github.com/JamesGoswell">
-                <i class="fab fa-github"></i>www.github.com/JamesGoswell</a><br>
-            Want to contact me? I'd prefer a text during normal working hours!
+        <div class="section-indent">
+            <div class="container">
+                <div class="item">
+                    <h2>Contact Me</h2>
+                    <p>
+                        Want to contact me? I'd prefer a text during normal working hours!
+                    </p>
+                    <div class="circle-container">
+                    <a class="circle" href="Docs/resume.pdf">
+                        <i class="fas fa-download"></i>
+                        Download<br>CV
+                    </a>
+                    <a class="circle" href="https://www.google.co.uk/maps/place/North+Yorkshire">
+                        <i class="fas fa-map-marker-alt"></i>
+                        N. Yorks, England
+                    </a>
+                    <a class="circle" href="tel:+44 (0)7908 579668">
+                        <i class="fas fa-phone"></i>
+                        +44 (0)7908 579668
+                    </a>
+                    <a class="circle" href="mailto:jamespgoswell@gmail.com">
+                        <i class="fas fa-at"></i>
+                        jamespgoswell<br>
+                        @gmail.com
+                    </a>
+                    <a class="circle" href="https://www.linkedin.com/in/james-goswell/">
+                        <i class="fab fa-linkedin-in"></i>James-Goswell
+                    </a>
+                    <a class="circle" href="https://www.github.com/JamesGoswell">
+                        <i class="fab fa-github"></i>JamesGoswell
+                    </a>
+                    </div>
+                </div>
+                <div class="item bg-hockey">
+                </div>
             </div>
-            <h3 class="WiP">Form not complete</h3>
-            <form method="post" action="formComplete.php">
-                <label for="fname">First Name / Preferred Name</label>
-                <input type="text" id="fname" name="firstname" placeholder="Your Name...">
-
-                <label for="lname">Last Name</label>
-                <input type="text" id="lname" name="lastname" placeholder="Your Last Name...">
-
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" placeholder="Your Email...">
-
-                <label for="subject">Subject</label>
-                <textarea id="subject" placeholder="Your Message..."></textarea>
-
-                <input type="submit" value="Submit">
-            </form>
         </div>
     </section>
 
+    <footer>
+        <p><i class="fas fa-code"></i> by James Goswell<br>Feb-2021</p>
+        <p>Some logos have been withdrawn till permission has been given.</p>
+    </footer>
 
-    <address>
-        <p><i class="fas fa-code"></i> by James Goswell<br>Oct-2020</p>
-    </address>
+
+    <nav id="navpush" class="navpush">
+        <div class="container">
+            <a href="#Home" class="item navpush-item">
+                <h2 class="navpush-hover"></h2>
+                <h2 class="navpush-icon fas fa-home">
+                </h2>
+                <h2 class="navpush-text">
+                    Home
+                </h2>
+            </a>
+            <a href="#Profile" class="item navpush-item">
+                <h2 class="navpush-hover"></h2>
+                <h2 class="navpush-icon fas fa-user">
+                </h2>
+                <h2 class="navpush-text">
+                    Profile
+                </h2>
+            </a>
+            <a href="#Experience" class="item navpush-item">
+                <h2 class="navpush-hover"></h2>
+                <h2 class="navpush-icon fas fa-industry">
+                </h2>
+                <h2 class="navpush-text">
+                    Experience
+                </h2>
+            </a>
+            <a href="#Skills" class="item navpush-item">
+                <h2 class="navpush-hover"></h2>
+                <h2 class="navpush-icon fas fa-clipboard-check">
+                    <div class=""></div>
+                </h2>
+                <h2 class="navpush-text">
+                    Strengths
+                </h2>
+            </a>
+            <a href="#Contact" class="item navpush-item">
+                <h2 class="navpush-hover"></h2>
+                <h2 class="navpush-icon fas fa-envelope">
+                </h2>
+                <h2 class="navpush-text">
+                    Contact
+                </h2>
+            </a>
+        </div>
+    </nav>
+    <div class="nav-background"></div>
+    <div class="nav-mono">
+        <img src="Images/monogram.svg" alt="JG Monogram">
+    </div>
+    <nav id="nav">
+        <div class="nav-links">
+            <a href="#Home" class="nav-button">
+                <div class="nav-icon">
+                    <div class="fas fa-home"></div>
+                </div>
+                <div class="nav-text">
+                    <h2>Home</h2>
+                </div>
+            </a>
+            <a href="#Profile" class="nav-button">
+                <div class="nav-icon">
+                    <div class="fas fa-user"></div>
+                </div>
+                <div class="nav-text">
+                    <h2>Profile</h2>
+                </div>
+            </a>
+            <a href="#Experience" class="nav-button">
+                <div class="nav-icon">
+                    <div class="fas fa-industry"></div>
+                </div>
+                <div class="nav-text">
+                    <h2>Experience</h2>
+                </div>
+            </a>
+            <a href="#Skills" class="nav-button">
+                <div class="nav-icon">
+                    <div class="fas fa-clipboard-check"></div>
+                </div>
+                <div class="nav-text">
+                    <h2>Strengths</h2>
+                </div>
+            </a>
+            <a href="#Contact" class="nav-button">
+                <div class="nav-icon">
+                    <div class="fas fa-envelope"></div>
+                </div>
+                <div class="nav-text">
+                    <h2>Contact</h2>
+                </div>
+            </a>
+            <div class="burger" onclick="navtoggle(this)">
+                <div class="nav-icon">
+                    <div id="burger" class="fas fa-bars"></div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <script src="Script/index.js"></script>
 </body>
+
 </html>
