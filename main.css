@@ -4,11 +4,30 @@
 }
 
 /* General **********/
+:root{
+    --colour-1: #FFD900;
+    --colour-2: #26425F;
+    --colour-3: #4E6990;
+    --colour-4: #CD171E;
+    --colour-5: #99B6D6;
+
+    --skew: -13deg;
+
+}
+@font-face {
+    font-family: 'JetBrains Mono';
+    src: url("Fonts/JetBrainsMono-Regular.ttf");
+    src: url("Fonts/JetBrainsMono-Regular.woff2");
+}
+@font-face {
+    font-family: 'DIN Alternate';
+    src: url("Fonts/DINAlternate-Bold.ttf");
+}
+
 @font-face {
     font-family: 'Dancing Script', cursive;
     font-family: 'Montserrat', sans-serif;
     font-family: 'Open Sans', sans-serif;
-
 }
 
 html, body{
@@ -20,33 +39,61 @@ html, body{
 }
 
 h1 {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 3em;
+    font-family: 'DIN Alternate', sans-serif;
+    /*font-family: 'Montserrat', sans-serif;*/
+    /*font-family: 'JetBrains Mono', monospace;*/
+    /*font-size: 3em;*/
+    font-size: 3.6em;
 }
 h2 {
-    font-family: 'Dancing Script', sans-serif;
+    /*font-family: 'Dancing Script', sans-serif;*/
+    font-family: 'JetBrains Mono', monospace;
     font-size: 2.6em;
+    color: var(--colour-2);
     margin-top: 0.28em;
     margin-bottom: 0.28em;
     text-align: center;
     /*margin: 0;*/
 }
+
 h3 {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'DIN Alternate', sans-serif;
+    font-size: 1.5em;
+    /*font-family: 'Montserrat', sans-serif;*/
+    /*font-family: 'JetBrains Mono', monospace;*/
+    color: var(--colour-2);
     margin: 0.25em 1vw;
 }
 h4 {
-    background-color: #99B7D6;
-    border: 3px solid #26425F;
-    border-left: 2px solid #26425F;
-    border-right: 2px solid #26425F;
-    font-family: 'Montserrat', sans-serif;
+    position: relative;
+    color: var(--colour-1);
+    /*border: 3px solid #26425F;*/
+    /*border-left: 2px solid #26425F;*/
+    /*border-right: 2px solid #26425F;*/
+    /*font-family: 'Montserrat', sans-serif;*/
+    font-family: 'JetBrains Mono', monospace;
     font-size: 1.4em;
     text-align: left;
     padding: 0.3em 0.6em;
     /*padding: 0.3em 0.5vw;*/
     margin: 1em 0;
+
+    /*transform:skewX(-30deg);*/
 }
+h4::before {
+    position: absolute;
+    content: "";
+
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+
+    background-color: var(--colour-2);
+    transform: skewX(var(--skew));
+    z-index: -1;
+}
+
 h5 {
     font-family: 'Montserrat', sans-serif;
     text-align: center;
@@ -54,11 +101,16 @@ h5 {
 p {
     /*margin-block-start: 0.5em;*/
     /*margin-block-end: 0.5em;*/
+    color: var(--colour-3);
     margin-right: 1vw;
     margin-left: 1vw;
 }
 b {
     font-size: 1.1em;
+    color: var(--colour-2);
+
+    font-family: "DIN Alternate";
+    font-size: 1.2em;
 }
 .quote {
     font-weight: 600;
@@ -71,7 +123,7 @@ img {
 
 a {
     text-decoration: none;
-    color: black;
+    /*color: var(--colour-1);*/
 }
 
 section{
@@ -91,7 +143,7 @@ section{
     margin: auto;
     width: 96%;
     /*min-height: 85vh;*/
-    background-color: white;
+    /*background-color: white;*/
 }
 
 .container {
@@ -296,58 +348,60 @@ nav h2 {
     text-shadow: 0 2px 15px #26425F;
 
 }
-.title-txt h2{
+.title-txt h2 {
     text-align: left;
+    color: white;
 }
-
 
 /* End Hero **********/
 
 
 /* Profile **********/
-#Profile {
-    /*background-color: rgba(255,000,000,.25);*/
-}
-
 #Profile .section-indent {
     display: flex;
 }
 
 .profile-img {
     height: 100%;
-    min-height: 15vh;
+    min-height: 25vh;
 
-    background-image: url("Images/profile.jpg");
-    /*background-image: url("../Images/profile.jpg");*/
+    background-image: url("Images/profile.jpg ");
     /*background-color: black;*/
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: 60% 35%;
-    transform: scaleX(-1);
+    background-position: 50% 40%;
+    /*transform: scaleX(-1);*/
     /*background-position: 77% 33%;*/
 }
 /* End Profile **********/
 
 
 /* Experience **********/
-#Experience {
-    /*display: none;*/
-    /*background-color: rgba(255,255,000,.25);*/
-}
-
-#Experience .container {
-
-}
 .exp-logo {
     display: flex;
     flex-direction: column;
     flex: 1 1 20%;
 }
+
+.exp-logo-img {
+    /*z-index: -1;*/
+    background: var(--colour-2);
+
+    margin-top: 0.36em;
+    margin-bottom: 0.3em;
+
+    /*padding-bottom: 0;*/
+
+}
+
 .exp-logo img {
+    display: block;
+
+    background-color: white;
+    mix-blend-mode: screen;
     filter: grayscale(100%);
 
-    margin-top: 0.3em;
-    margin-bottom: 0.3em;
+    padding-bottom: 0;
     width: 100%;
 }
 .exp-text {
@@ -358,7 +412,6 @@ nav h2 {
 .exp-sec .container {
     border-style: solid;
     border-width: 0 0 2px 0;
-    /*border-color: rgb(100,100,100);*/
     border-color: #26425F;
 }
 .exp-sec .container:last-child {
@@ -384,50 +437,10 @@ nav h2 {
      display: inline-block;
  }
 
-.card {
-    /*display: inline-block;*/
-    float: left;
-    width: 50%;
-    height: 100%;
-    border: white solid 2px;
-    box-sizing: border-box;
-
-
-    /*background-size: contain;*/
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-    transition: 0.5s;
-}
-.c-container {
-    width: 100%;
-    height: 100%;
-    background-color: rgba(255,255,255,0.95);
-    opacity: 0;
-
-}
-
-.exp:hover .card{
-    width: 20%;
-}
-.exp .card:hover{
-    width: 80%;
-}
-.exp .card:hover .c-container{
-    opacity: 100%;
-    overflow-y: scroll;
-
-    transition: opacity 0.5s;
-    transition-delay: 0.5s;
-}
 /* End Experience **********/
 
 
 /* Skills **********/
-#Skills {
-    /*display: none;*/
-    /*background-color: rgba(000,255,000,.25);*/
-}
 #Skills .item {
     width: 50%;
 
@@ -453,38 +466,29 @@ nav h2 {
 }
 /* End Skills **********/
 
-
-/* Projects **********/
-#Projects {
-    /*background-color: rgba(000,255,255,.25);*/
-}
-/* End Projects **********/
-
-
-
 /* Contact **********/
 #Contact {
-    background-color: #26425F;
+    background-color: var(--colour-2);
 }
 
 #Contact .section-indent{
-    background-color: #99B7D6;
-    border: 3px solid #26425F;
-    border-left: 2px solid #26425F;
-    border-right: 2px solid #26425F;
+    background-color: var(--colour-5);
 }
 
 .bg-hockey {
     min-height: 20vh;
 
     background-image: url("Images/hockey.jpg");
-    /*background-color: black;*/
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 60% 25%;
 }
+#Contact h2{
+    color: var(--colour-2);
+}
 
 #Contact p {
+    color: var(--colour-2);
     text-align: center;
     margin-right: 5%;
     margin-left: 5%;
@@ -500,14 +504,20 @@ nav h2 {
 }
 
 .circle {
+    /*background-color: var(--colour-2);*/
+    /*color: var(--colour-1);*/
+    font-family: "DIN Alternate",sans-serif;
 
-    background-color: #26425F;
-    color: white;
+    color: #fff;
     text-shadow: 0 2px 10px black;
 
     text-align: center;
 
+    /*TODO Sort circles at bottom*/
+    background-color: var(--colour-2);
+    /*background-color: #fff;*/
     border-radius: 100% 100% 100% 100%;
+    border-color: 3px solid var(--colour-2);
     /*border-radius: 100%;*/
 
     position: relative;
@@ -526,14 +536,6 @@ nav h2 {
 
 }
 /* End Contact **********/
-
-
-/* Blog **********/
-#Blog {
-    /*background-color: rgba(255,000,255,.25);*/
-}
-/* End Blog **********/
-
 
 /* Footer **********/
 footer {
